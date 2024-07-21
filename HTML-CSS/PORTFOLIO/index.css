@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "abadd";
+  src: url(./font/abaddon.TTF);
+}
+@font-face {
+  font-family: "go3";
+  src: url(./font/go3v2.ttf);
+}
+
+@font-face {
+  font-family: "monts";
+  src: url(./font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "cost";
+  src: url(./font/Costarica\ PERSONAL\ USE\ ONLY!.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* ****HEADER**** */
+header {
+  width: 100vw;
+  height: 6vw;
+  background: rgb(39, 39, 46);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-family: "abadd";
+  color: rgb(226, 158, 11);
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.navbar a {
+  color: rgb(226, 158, 11);
+  font-size: 2.5rem;
+  font-family: "abadd";
+}
+
+/* ****CONTAİNER**** */
+.container {
+  height: 35vw;
+  background: linear-gradient(45deg, rgb(71, 71, 100), rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.self-text {
+  color: white;
+  margin-left: 3rem;
+}
+.self-text h1 {
+  font-size: 3.5rem;
+  font-family: "cost";
+  color: rgb(226, 158, 11);
+  margin-bottom: 20px;
+}
+.self-text h2 {
+  font-family: "monts";
+}
+.moving-image {
+  width: 800px;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.fa-brands {
+  color: rgb(226, 158, 11);
+  margin: 2rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.fa-brands:hover {
+  color: brown;
+  transition: all 1s ease;
+  border-radius: 50%;
+}
+
+button {
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color: rgb(226, 158, 11);
+  margin-top: 20px;
+}
+button:hover {
+  border: 0.5px solid transparent;
+  border-radius: 45px;
+  box-shadow: 0 0 60px 15px rgba(226, 158, 11, 0.355);
+}
+
+/* ****ABOUT**** */
+.about-sec {
+  height: 25vw;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(71, 71, 100));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+
+span {
+  color: rgb(226, 158, 11);
+}
+.about-h1 {
+  font-size: 3.5rem;
+}
+
+.about-h2 {
+  margin-bottom: 2rem;
+}
+
+.about-h3 {
+  font-family: "monts";
+}
+
+/* ****SKILL**** */
+.skill {
+  /* height: 35vw; */
+  background: linear-gradient(45deg, rgb(71, 71, 100), rgb(0, 0, 0));
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 16rem;
+}
+
+.box {
+  /* border: 2px solid red; */
+  flex: 1 1 20rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  background: rgb(39, 39, 46);
+}
+
+.box:hover {
+  border: 1px solid transparent;
+  border-radius: 45px;
+  box-shadow: 0 0 60px 25px rgb(224, 177, 74);
+  transition: all 1s ease;
+}
+.fa-solid {
+  color: rgb(226, 158, 11);
+  margin: 2rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.fa-solid:hover {
+  color: brown;
+  transition: all 1s ease;
+  border-radius: 50%;
+}
+
+.skill-h1 {
+  color: rgb(224, 177, 74);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+.skill-h2 {
+  color: rgb(226, 158, 11);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+.skill-h3 {
+  color: rgb(226, 158, 11);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+.skill-h4 {
+  color: rgb(226, 158, 11);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+.skill-h5 {
+  color: rgb(226, 158, 11);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+.skill-h6 {
+  color: rgb(226, 158, 11);
+  font-size: 4rem;
+  font-family: "abadd";
+}
+
+/* ***** son project ***** */
+
+.project-sec {
+  /* height: 25vw; */
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(71, 71, 100));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 3rem;
+}
+
+.proimg {
+  width: 300px;
+  height: 200px;
+  border-radius: 3rem;
+}
+
+.pro {
+  margin-left: 50px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.pro:hover {
+  width: 350px;
+  height: auto;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 0 10px 10px rgb(224, 177, 74);
+  transition: all 0.53s ease;
+}
