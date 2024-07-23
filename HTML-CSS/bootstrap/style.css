@@ -12,7 +12,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh   ;
 
-    border: 2px solid red;
+
+}
+.contact{
+    background-image: url("./img/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh   ;
+
+
 }
